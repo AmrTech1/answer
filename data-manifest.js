@@ -1,7 +1,3 @@
-// خريطة الموقع: يحدد الأقسام، وحدود كل قسم (المستويات/الفصول)، وموقع ملف بيانات كل وحدة.
-// لإضافة قسم أو مستوى/فصل جديد، عدّل هذا الملف فقط (أضف رقمًا للمصفوفة "ids" وأنشئ ملف البيانات المطابق)،
-// دون الحاجة لتعديل أي HTML أو منطق عرض.
-
 window.MANIFEST = {
   javascript: {
     key: "javascript",
@@ -21,7 +17,7 @@ window.MANIFEST = {
     ids: Array.from({ length: 25 }, function (_, i) { return i + 1; }),
     fileFor: function (id) {
       var padded = id < 10 ? "0" + id : "" + id;
-      return "js/data/python/chapter" + padded + ".js";
+      return "chapter" + padded + ".js";
     }
   }
 };
